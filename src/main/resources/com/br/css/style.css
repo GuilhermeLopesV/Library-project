@@ -1,0 +1,85 @@
+.main-layout {
+    -fx-background-color: #f7f9fc;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.top-bar {
+    -fx-background-color: #0f3d73;
+    -fx-border-color: #d4a017;
+    -fx-border-width: 0 0 3px 0;
+}
+
+.app-title {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.side-menu {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d8e1ee;
+    -fx-border-width: 0 1px 0 0;
+}
+
+.content-area {
+    -fx-background-color: #f7f9fc;
+    -fx-padding: 30px;
+}
+
+.welcome-title {
+    -fx-text-fill: #0f3d73;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.button {
+    -fx-background-color: #0f3d73;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 9px 14px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #14508f;
+}
+
+.button:pressed {
+    -fx-background-color: #0b2e55;
+}
+
+#sair {
+    -fx-background-color: #d4a017;
+    -fx-text-fill: #102a43;
+}
+
+#sair:hover {
+    -fx-background-color: #e3b532;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #102a43;
+    -fx-prompt-text-fill: #7b8794;
+    -fx-border-color: #c8d3e1;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 10px;
+}
+
+.text-field:focused {
+    -fx-border-color: #d4a017;
+    -fx-effect: dropshadow(gaussian, rgba(212, 160, 23, 0.25), 8, 0, 0, 0);
+}
+
+.footer-bar {
+    -fx-background-color: #0f3d73;
+}
+
+.footer-bar .label {
+    -fx-text-fill: #f5d77b;
+    -fx-font-size: 12px;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.br.PrincipalController"
+            stylesheets="@../css/style.css"
+            styleClass="main-layout">
+
+    <!-- TOPO -->
+    <top>
+        <HBox spacing="10" alignment="CENTER_LEFT" styleClass="top-bar">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Label text="Sistema JavaFX" styleClass="app-title"/>
+
+        </HBox>
+    </top>
+
+    <!-- MENU LATERAL -->
+    <left>
+        <VBox spacing="10" prefWidth="180" styleClass="side-menu">
+
+            <padding>
+                <Insets top="15" right="10" bottom="15" left="10"/>
+            </padding>
+
+            <Button text="Inicio" maxWidth="Infinity"/>
+            <Button text="Usuarios" maxWidth="Infinity"/>
+            <Button text="Configuracoes" maxWidth="Infinity"/>
+            <Button fx:id="sair" text="Sair" maxWidth="Infinity" onAction="#clicarBotao"/>
+
+        </VBox>
+    </left>
+
+    <!-- CONTEUDO PRINCIPAL -->
+    <center>
+        <VBox spacing="15" alignment="CENTER" styleClass="content-area">
+
+            <Label text="Bem-vindo ao sistema!" styleClass="welcome-title"/>
+
+            <TextField promptText="Digite algo"/>
+
+            <Button text="Enviar"/>
+
+        </VBox>
+    </center>
+
+    <!-- RODAPE -->
+    <bottom>
+        <HBox alignment="CENTER" styleClass="footer-bar">
+
+            <padding>
+                <Insets top="8" right="8" bottom="8" left="8"/>
+            </padding>
+
+            <Label text="(c) 2026 - Meu Sistema"/>
+
+        </HBox>
+    </bottom>
+
+</BorderPane>
