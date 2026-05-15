@@ -8,7 +8,6 @@ public class PrincipalController {
     public Button sair;
 
     public void clicarBotao(ActionEvent actionEvent) {
-        System.out.println("saindo...");
         System.exit(0);
     }
 }
